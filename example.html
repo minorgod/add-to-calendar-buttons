@@ -2,8 +2,7 @@
 <html>
   <head>
     <script src="ouical.js"></script>
-    <link rel="stylesheet" href="main.css">
-    <title>OuiCal Example</title>
+    <title>The Damn Fine OuiCal Example</title>
   </head>
 
   <body>
@@ -11,6 +10,7 @@
     <div class="new-cal2"></div>
   <script>
       var myCalendar = createCalendar({
+        calendars: ['google', 'yahoo'],
         options: {
           class: 'my-class',
           id: 'my-id'                               // You need to pass an ID. If you don't, one will be generated for you.
