@@ -1,10 +1,12 @@
-# OuiCal
+# OuiCal (modification by Damn Fine)
 
 A simple JS library that enables you to add an "add to calendar" button for your upcoming events.
 
 ## Inspiration
 
 This project was inspired by [Eventbrite's](http://www.eventbrite.com/) add to calendar feature (which should have been open sourced #justSayin).
+
+Modificiations have been made to remove dependencies on style, creating just the links rather than a single button and dropdown.
 
 ## How to use it?
 
@@ -19,6 +21,8 @@ The only fields that are mandatory are:
 ## Example
 
     var myCalendar = createCalendar({
+      // optional, you can pass in 'google', 'yahoo', 'outlook', 'ical'
+      calendars: ['google'],
       options: {
         class: 'my-class',
         
@@ -48,24 +52,6 @@ The only fields that are mandatory are:
     });
 
     document.querySelector('#place-where-I-want-this-calendar').appendChild(myCalendar);
-
-[Here is a live example](http://carlsednaoui.github.io/add-to-calendar-buttons/example.html)
-
-## Looking for Instant Gratification?
-[Copy OuiCal into Chrome's JS console](https://raw.github.com/carlsednaoui/ouical/master/ouical.js) (or whatever browser you're using).
-
-
-Then call this:
-
-    document.getElementsByTagName('body')[0].appendChild(createCalendar({data:{title:"this is the title of my event", start: new Date(), duration: 90}}));
-
-\#winning!
-
-## Calendar Generator
-Need to generate an add-to-calendar widget on the fly? No problem, [go here](http://carlsednaoui.github.io/add-to-calendar-buttons/generator/generator.html).
-
-## GitHub Project Page
-[Official Project Page](http://carlsednaoui.github.io/ouical/)
 
 ## License
 [MIT](http://opensource.org/licenses/MIT)
