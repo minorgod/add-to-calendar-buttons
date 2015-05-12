@@ -83,7 +83,7 @@
           'END:VCALENDAR'].join('\n'));
 
       return '<a class="'+class_name+'" target="_blank" href="' +
-        href + '">Add to ' + calendarName + ' Calendar</a>';
+        href + '">Add to ' + calendarName + '</a>';
     },
 
     ical: function(event, class_name) {
