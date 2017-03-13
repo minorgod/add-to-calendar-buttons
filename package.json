@@ -1,0 +1,9 @@
+{
+  "name": "add-to-calendar-buttons",
+  "title": "Add To Calendar Buttons",
+  "homepage": "https://github.com/minorgod/add-to-calendar-buttons",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/minorgod/add-to-calendar-buttons.git"
+  }
+}
